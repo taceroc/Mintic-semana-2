@@ -48,38 +48,40 @@ const printOnScreen = (dataText) => {
     // let testArray = Array.from(dataText);
     // console.log(testArray);
     // let movieArray = [];
-    // for (let key in dataText) {
-    //     movieArray.push(key + ': ' + dataText[key]);
-    // }
     // console.log(movieArray);
-
-    const movieContainer = document.querySelector('#movieContainer');
-
-    const {Title, Actors, Year, Poster} = dataText;
-
-    console.log(Title, Actors, Year, Poster);
-
-    const moviePoster = document.createElement('img');
-    moviePoster.className = "card-img-top";
-    moviePoster.src = Poster;
-    moviePoster.alt = 'poster ' + Title;
-
-    const movieTitle = document.createElement('h2');
-    movieTitle.textContent = Title;
-
-    const movieActors = document.createElement('li');
-    movieActors.textContent = Actors;
-
-    const movieYear = document.createElement('li');
-    movieYear.textContent = Year;
     
-
-    movieContainer.appendChild(moviePoster);
-    movieContainer.appendChild(movieTitle);
-    movieContainer.appendChild(movieActors);
-    movieContainer.appendChild(movieYear);
-
-
+    // const movieContainer = document.querySelector('#movieContainer');
+    
+    // const {Title, Actors, Year, Poster} = dataText;
+    
+    // console.log(Title, Actors, Year, Poster);
+    
+    // const moviePoster = document.createElement('img');
+    // moviePoster.className = "card-img-top";
+    // moviePoster.src = Poster;
+    // moviePoster.alt = 'poster ' + Title;
+    
+    // const movieTitle = document.createElement('h2');
+    // movieTitle.textContent = Title;
+    
+    // const movieActors = document.createElement('li');
+    // movieActors.textContent = Actors;
+    
+    // const movieYear = document.createElement('li');
+    // movieYear.textContent = Year;
+    
+    
+    // movieContainer.appendChild(moviePoster);
+    // movieContainer.appendChild(movieTitle);
+    // movieContainer.appendChild(movieActors);
+    // movieContainer.appendChild(movieYear);
+    
+    for (let key in dataText) {
+        let movieActors = document.createElement('h2');
+        
+        movieArray.push(key + ': ' + dataText[key]);
+    }
+    
     
     
 
