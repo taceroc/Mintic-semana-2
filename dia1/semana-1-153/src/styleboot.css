@@ -2,6 +2,7 @@ body{
     /* estable el ancho de 1200 y el tamano se preserva aunque se cambie le tamano del navegador */
     width: 1200px  !important;
     min-width: 1200px  !important;
+    /* padding-left: 50px; */
 }
 nav{
     width: 1200px  !important;
@@ -23,9 +24,39 @@ nav{
     margin-bottom: 0px;
 }
 
-.card {
+.Servicios .card {
     border-color: rgb(221, 120, 221) !important;
     border-width: 2px !important;
+}
+
+.Noticias .card {
+    border-color: rgb(221, 120, 221) !important;
+    border-width: 2px !important;
+}
+
+.noticias__title{ 
+    text-align: center;
+    background-color:#ffc107;
+    color:rgba(255,0,0,0.5) ;
+    margin-bottom: 0px;
+}
+
+.Noticias p {
+    height: 160px;
+}
+
+.titulo__equipo{ 
+    text-align: center;
+    background-color:#ffc107;
+    color:rgba(255,0,0,0.5) ;
+    margin-bottom: 0px;
+}
+
+.footer__title{ 
+    text-align: center;
+    background-color:#ffc107;
+    color:rgba(255,0,0,0.5) ;
+    margin-bottom: 10px;
 }
 
 

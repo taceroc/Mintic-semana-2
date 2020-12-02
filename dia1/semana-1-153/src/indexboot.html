@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
 <body>
         
 <header id="inicio">       
-<nav class="nav fixed-top justify-content-center navbar-light bg-warning" >
+<nav class="nav fixed-top justify-content-center navbar-light bg-warning " >
     <!-- <div class="collapse navbar-collapse justify-content-center" id="navbarNav "></div> -->
         <a class="nav-item nav-link active"  href="#inicio">Inicio</a>
         <a class="nav-item nav-link"  href="#services" >Servicios</a></li>
@@ -22,19 +22,17 @@
     <!-- </div> -->
 </nav> 
 <div class="nav-image">
-<img src="./imagenes/banner.jpg" alt="Ciclismo Profesional">
+    <img class="rounded mx-auto d-block" src="./imagenes/banner.jpg" alt="Ciclismo Profesional">
 </div> 
 </header>
 
  <!-- servicios -->
- <!-- <section id="services"> -->
+ <section class="Servicios" id="services">
     
 <!-- <div class="container-fluid" id="services"> -->
-    <div>
-        <h2 class="titulo__services"  id="services" >Servicios</h2>
-    </div>
-    <div class="row justify-content-center mb-5">
-        <div class="col-sm-6 col-xs-12 col-lg-4 mt-5">
+    <h2 class="titulo__services mt-3"  id="services" >Servicios</h2>
+    <div class="row justify-content-center mb-3 mt-0">
+        <div class="col-sm-6 col-xs-12 col-lg-4 mt-3">
             <div class="card  h-100 text-justify bg-info">
                 <h2 class="servicios__contenedor__titulo text-center">VENTA DE BICICLETAS</h2>
                 <img class="rounded mx-auto d-block" src="imagenes/bici.jpg" width="250" height="250" alt="Bicicleta">
@@ -42,7 +40,7 @@
                 <a class="text-center text-danger text-decoration-none" href="https://www.optimusbikes.com/" target="_blank">COMPRAR</a>
             </div>
         </div>
-        <div class="col-sm-6 col-xs-12 col-lg-4 mt-5">
+        <div class="col-sm-6 col-xs-12 col-lg-4 mt-3">
             <div class="card  h-100 text-justify bg-info">
                 <h2 class="servicios__contenedor__titulo text-center">BICITOUR</h2>
                 <img class="rounded mx-auto d-block" src="imagenes/bicitour.jpg" width="350" height="250" alt="">
@@ -50,7 +48,7 @@
                 <a class="text-center text-danger text-decoration-none" href="http://www.caminatasbogota.com/tours/bicitour-tour-en-bicicleta-por-bogota-y-sus-pueblos-cercanos/" target="_blank">MAS INFO..</a>
             </div>
         </div>
-        <div class="col-sm-6 col-xs-12 col-lg-4 mt-5">
+        <div class="col-sm-6 col-xs-12 col-lg-4 mt-3">
             <div class="card h-100 text-justify bg-info">
                 <h2 class="servicios__contenedor__titulo text-center">ACCESORIOS</h2>
                 <img class="rounded mx-auto d-block" src="imagenes/accesorios.jpg" width="350" height="250" alt="">
@@ -60,119 +58,184 @@
         </div>
     </div>
 <!-- </div> -->
-<!-- </section> -->
+</section>
   
-   <h2 class="noticias__title">Noticias</h2>
-    <section class="noticias" id="news">
+<section class="Noticias" id = "news">
+<h2 class="noticias__title">Noticias</h2>
         <!-- primera seccion de noticias, compuesta por dos horizontales -->
-        <div class="noticias__row">
-            
-            <div class="noticias__column">
-                <!-- primera noticia -->
-                <div class="noticias__card">
-                    <h2 class="noticias__card__title">“Creo que Egan Bernal le ha dado una lección muy sabia a cada ciclista"</h2>
-                    <div class="noticias__card__container" >    
-                        <img src="https://e00-co-marca.uecdn.es/claro/assets/multimedia/imagenes/2020/11/27/16064915311412.jpg" alt="eganbernal" width="400" height="220">
-                        <p>Egan Bernal no ha disfrutado de su mejor año en este 2020 después de conquistar el Tour de Francia del año pasado. Sin embargo, uno de los directores del Jumbo Visma ha alabado su papel en la Grande Boucle de esta temporada dejando claro la gran lección que dio a pesar de sus malos días.</p>
-                        <a  href="https://co.marca.com/claro/ciclismo/2020/11/27/5fc11dbb22601d205d8b4688.html" target="_blank">Noticia completa</a>
-                    </div>
-                </div>
-                <!-- segunda noticia -->  
-                <div class="noticias__card">
-                    <h2 class="noticias__card__title">Daniel Martínez, nominado a prestigiosos premios de ciclismo</h2>
-                    <div class="noticias__card__container">
-                        <img src="https://www.eltiempo.com/files/article_main/uploads/2020/09/11/5f5b953b0dc3b.jpeg" alt="" width="400" height="220">
-                        <p>El colombiano Daniel Martínez ha sido nominado al Vélo D’Or, galardón que entrega Vélo Magazine al mejor ciclista de la temporada 2020.</p>
-                        <a href="https://www.eltiempo.com/deportes/ciclismo/ciclista-colombiano-daniel-martinez-es-candidato-al-velo-d-or-2020-550624" target="_blank">Noticia completa</a>
+        <div class="row justify-content-center mb-3 mt-1">
+            <!-- primera noticia -->
+            <div class="col-sm-6 col-xs-12 col-lg-6 mt-3 pr-1">
+                <div class="card h-100 text-justify bg-danger">
+                    <h2 class="noticias__card__title text-center p-2">“Creo que Egan Bernal le ha dado una lección muy sabia a cada ciclista"</h2>
+                    <div class="noticias__card__container text-center" >    
+                        <img class="rounded mx-auto d-block" src="https://e00-co-marca.uecdn.es/claro/assets/multimedia/imagenes/2020/11/27/16064915311412.jpg" alt="eganbernal" width="400" height="220">
+                        <p class = "p-2 text-justify">Egan Bernal no ha disfrutado de su mejor año en este 2020 después de conquistar el Tour de Francia del año pasado. Sin embargo, uno de los directores del Jumbo Visma ha alabado su papel en la Grande Boucle de esta temporada dejando claro la gran lección que dio a pesar de sus malos días.</p>
+                        <a class="text-info text-decoration-none" href="https://co.marca.com/claro/ciclismo/2020/11/27/5fc11dbb22601d205d8b4688.html" target="_blank">Noticia completa</a>
                     </div>
                 </div>
             </div>
-        </div>
+                <!-- segunda noticia -->  
+            <div class="col-sm-6 col-xs-12 col-lg-6 mt-3">
+                <div class="card  h-100 text-justify bg-danger">
+                    <h2 class="noticias__card__title text-center p-2">Daniel Martínez, nominado a prestigiosos premios de ciclismo</h2>
+                    <div class="noticias__card__container d-flex flex-column text-center">
+                        <img class="rounded mx-auto d-block" src="https://www.eltiempo.com/files/article_main/uploads/2020/09/11/5f5b953b0dc3b.jpeg" alt="" width="400" height="220">
+                        <p class = "p-2 text-justify">El colombiano Daniel Martínez ha sido nominado al Vélo D’Or, galardón que entrega Vélo Magazine al mejor ciclista de la temporada 2020.</p>
+                        <a class="text-center text-info text-decoration-none" href="https://www.eltiempo.com/deportes/ciclismo/ciclista-colombiano-daniel-martinez-es-candidato-al-velo-d-or-2020-550624" target="_blank">Noticia completa</a>
+                    </div>
+                </div>
+            </div>
 
         <!-- segunda seccion de noticias, compuesta por dos horizontales -->
-        <div class="noticias__row">
-            <div class="noticias__column">
-                <!-- tercera noticia -->
-                <div class="noticias__card">
-                    <h2 class="noticias__card__title">¿El sucesor de Nairo? ‘Supermán’ López, gran fichaje del Movistar Team</h2>
-                    <div class="noticias__card__container" >    
-                        <img src="https://www.futbolred.com/files/article_main/uploads/2020/08/29/5f4aa03556fae.jpeg" alt="" width="400" height="220">
-                        <p>El colombiano Miguel Ángel 'Supermán' López, uno de los corredores más destacados del pelotón internacional, ha fichado por el Movistar, informó el club español en un comunicado. El corredor cafetero es el quinto refuerzo para la próxima temporada, tras Iván García Cortina, el austríaco Gregor Muhlberger, el puertorriqueño Abner González y Gonzalo Serrano.</p>
-                        <a href="https://www.futbolred.com/fuera-del-futbol/ciclismo-miguel-superman-lopez-nuevo-ciclista-del-movistar-team-127733" target="_blank">Noticia completa</a>
+            <div class="col-sm-6 col-xs-12 col-lg-6 mt-3 pr-1">
+                <div class="card  h-100 text-justify bg-danger">
+                    <!-- tercera noticia -->
+                    <h2 class="noticias__card__title text-center p-2">¿El sucesor de Nairo? ‘Supermán’ López, gran fichaje del Movistar Team</h2>
+                    <div class="noticias__card__container text-center" >    
+                        <img class="rounded mx-auto d-block" src="https://www.futbolred.com/files/article_main/uploads/2020/08/29/5f4aa03556fae.jpeg" alt="" width="400" height="220">
+                        <p class = "p-2 text-justify">El colombiano Miguel Ángel 'Supermán' López, uno de los corredores más destacados del pelotón internacional, ha fichado por el Movistar, informó el club español en un comunicado. El corredor cafetero es el quinto refuerzo para la próxima temporada, tras Iván García Cortina, el austríaco Gregor Muhlberger, el puertorriqueño Abner González y Gonzalo Serrano.</p>
+                        <a class="text-center text-info text-decoration-none" href="https://www.futbolred.com/fuera-del-futbol/ciclismo-miguel-superman-lopez-nuevo-ciclista-del-movistar-team-127733" target="_blank">Noticia completa</a>
                     </div>
                 </div>
+            </div>
+            <div class="col-sm-6 col-xs-12 col-lg-6 mt-3">
+                <div class="card  h-100 text-justify bg-danger">
                 <!-- cuarta noticia -->  
-                <div class="noticias__card">
-                    <h2 class="noticias__card__title">Camargo, de fracturarse el fémur a ganar la Vuelta a Colombia</h2>
-                    <div class="noticias__card__container">
-                        <img src="https://www.eltiempo.com/files/article_main/files/crop/uploads/2020/11/17/5fb448333bd55.r_1606259856651.0-0-1280-637.jpeg" alt="" width="400" height="220">
-                        <p>Se disputaba el circuito de Ramiriquí, Boyacá, en el 2016. El lote iba compacto y la carrera promediaba su recorrido. Un reductor de velocidad fue el culpable de una fuerte caída. Tras varios meses de recuperación, y duda; logró participar de nuevo en carreras. Ganó la Vuelta Colombia y la prueba juvenil mas importante del país en un mismo año, una hazaña que pocos han logrado.</p>
-                        <a href="https://www.eltiempo.com/deportes/ciclismo/vuelta-a-colomboa-2020-diego-camargo-perfil-del-campeon-550358" target="_blank">Noticia completa</a>
+                    <h2 class="noticias__card__title text-center p-2">Camargo, de fracturarse el fémur a ganar la Vuelta a Colombia</h2>
+                    <div class="noticias__card__container text-center">
+                        <img class="rounded mx-auto d-block" src="https://www.eltiempo.com/files/article_main/files/crop/uploads/2020/11/17/5fb448333bd55.r_1606259856651.0-0-1280-637.jpeg" alt="" width="400" height="220">
+                        <p class = "p-2 text-justify">Se disputaba el circuito de Ramiriquí, Boyacá, en el 2016. El lote iba compacto y la carrera promediaba su recorrido. Un reductor de velocidad fue el culpable de una fuerte caída. Tras varios meses de recuperación, y duda; logró participar de nuevo en carreras. Ganó la Vuelta Colombia y la prueba juvenil mas importante del país en un mismo año, una hazaña que pocos han logrado.</p>
+                        <a class="text-center text-info text-decoration-none" href="https://www.eltiempo.com/deportes/ciclismo/vuelta-a-colomboa-2020-diego-camargo-perfil-del-campeon-550358" target="_blank">Noticia completa</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-  
- <!-- equipo -->
-        <div>
-            <h2 class="titulo__equipo">Miembros</h2>
+</section>
+
+<h2 class="noticias__title">Noticias</h2>
+   <!-- carousel -->
+   <div id="carouselExampleCaptions" class="carousel slide mb-3 mt-3" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1" class=""></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2" class=""></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="3" class=""></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="700" height="500" src="https://e00-co-marca.uecdn.es/claro/assets/multimedia/imagenes/2020/11/27/16064915311412.jpg"
+                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title>
+                <rect
+                    width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em"></text></img>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>“Creo que Egan Bernal le ha dado una lección muy sabia a cada ciclista"</h5>
+                <p class = "p-2 text-justify">Egan Bernal no ha disfrutado de su mejor año en este 2020 después de conquistar el Tour de Francia del año pasado. Sin embargo, uno de los directores del Jumbo Visma ha alabado su papel en la Grande Boucle de esta temporada dejando claro la gran lección que dio a pesar de sus malos días.</p>
+                <a class="text-success text-decoration-none" href="https://co.marca.com/claro/ciclismo/2020/11/27/5fc11dbb22601d205d8b4688.html" target="_blank">Noticia completa</a>
+            </div>
         </div>
-        <section id="team" class="equipo">
-            <div class="miembros__equipo">
-                <h2>Tatiana Acero Cuellar</h2>
-                <img class="fotos__miembros" src="imagenes/Tatiana.jfif" width="350" height="400" alt="">
-                <p>Estudiante de Física, Universidad Nacional de Colombia, 22 años, pasatiempo: ver anime.
+        <div class="carousel-item">
+            <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="700" height="500" src="https://www.eltiempo.com/files/article_main/uploads/2020/09/11/5f5b953b0dc3b.jpeg"
+                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Second slide"><title>Placeholder</title>
+                <rect
+                    width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em"></text></img>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Daniel Martínez, nominado a prestigiosos premios de ciclismo</h5>
+                <p class = "p-2 text-justify text-light">El colombiano Daniel Martínez ha sido nominado al Vélo D’Or, galardón que entrega Vélo Magazine al mejor ciclista de la temporada 2020.</p>
+                <a class="text-center text-success text-decoration-none" href="https://www.eltiempo.com/deportes/ciclismo/ciclista-colombiano-daniel-martinez-es-candidato-al-velo-d-or-2020-550624" target="_blank">Noticia completa</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Third slide"><title>Placeholder</title>
+                <rect
+                    width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text></svg>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Second slide"><title>Placeholder</title>
+                <rect
+                    width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text></svg>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+
+
+ <!-- equipo -->
+
+ <section class="Miembros" id="team">
+    <h2 class="titulo__equipo">Miembros</h2>
+    <div class="row justify-content-center mb-3 mt-0">
+        <div class="col-sm-6 col-xs-12 col-lg-4 mt-5">
+            <div class="card  h-100 text-justify bg-info">
+                <h2 class ="text-center">Tatiana Acero Cuellar</h2>
+                <img class="rounded mx-auto d-block" src="imagenes/Tatiana.jfif" width="370" height="390" alt="">
+                <p class = "p-2 text-justify">Estudiante de Física, Universidad Nacional de Colombia, 22 años, pasatiempo: ver anime.
                 </p>
             </div>
-            <div class="miembros__equipo" >
-                <h2>Daniel Picon Agudelo</h2>
-                <img class="fotos__miembros" src="imagenes/Daniel.jfif" width="200" height="400" alt="">
-                <p>Estudiante de Ingenieria en Computacion, 19 años, pasatiempo: jugar videojuegos.</p>
+        </div>
+        <div class="col-sm-6 col-xs-12 col-lg-4 mt-5">
+            <div class="card  h-100 text-justify bg-info">
+                <h2 class ="text-center">Daniel Picon Agudelo</h2>
+                <img class="rounded mx-auto d-block" src="imagenes/Daniel.jfif" width="200" height="390" alt="">
+                <p class = "p-2 text-justify">Estudiante de Ingenieria en Computacion, 19 años, pasatiempo: jugar videojuegos.</p>
             </div>
-            <div class="miembros__equipo">
-                <h2>Cristian Camilo Parra Parra</h2>
-                <img class="fotos__miembros" src="imagenes/Camilo.jfif" width="300" height="400"  alt="">
-                <p>Ingeniero Industrial, Universidad de Cundinamarca, 27 años, pasatiempo: viajar.</p>
+        </div>
+        <div class="col-sm-6 col-xs-12 col-lg-4 mt-5">
+            <div class="card  h-100 text-justify bg-info">
+                <h2 class ="text-center">Cristian Camilo Parra Parra</h2>
+                <img class="rounded mx-auto d-block" src="imagenes/Camilo.jfif" width="300" height="390"  alt="">
+                <p class = "p-2 text-justify"> Ingeniero Industrial, Universidad de Cundinamarca, 27 años, pasatiempo: viajar.</p>
             </div>
+        </div>
+    </div>
 
-
-       </section>  
+</section>  
 
 
    
-<footer>
-    <div class="footer-principal">
-        <h2>Informaci&oacute;n de Contacto</h2>
-      <div class="footer_secundario">
-        
+<h2 class="footer__title">Información de Contacto</h2>
 
-        <div class="footer_left">
-            <div>
-                 <h3>Motivante de desarrollo:</h3><span>El motivante principal de este proyecto es realizar un aprendizaje teórico-práctico
-                      que conlleve al desarrollo de habilidades de diseño y desarrollo web, complementando la formación
-                     iniciada en el proyecto MisiónTIC 2022 (ciclo 1 y ciclo 2). Adicional, establecer una red de programadores colombianos y
-                     a través del trabajo colaborativo complementen el conocimiento con habilidades intrapersonales maximizando
-                     su formación profesional.
-                 </span>
-                 <p><b>Sitio Git Hub: </b><a href="https://github.com/taceroc/semana-1-153.git" target="_blank" >https://github.com/taceroc/semana-1-153.git</a></p>
-                 
+<footer class="page-footer bg-secondary text-white pt-4 ">
+    <div class="container-fluid text-center text-md-left">
+        <div class="row">
+            <div class="col-md-6 mt-md-0 mt-3">
+                <h5 class=" text-center text-uppercase font-weight-bold">Motivante de desarrollo</h5>
+                 <p class= "p-2 text-justify">El motivante principal de este proyecto es realizar un aprendizaje teórico-práctico que conlleve al desarrollo de habilidades de diseño y desarrollo web, complementando la formación iniciada en el proyecto MisiónTIC 2022 (ciclo 1 y ciclo 2). Adicional, establecer una red de programadores colombianos y a través del trabajo colaborativo complementen el conocimiento con habilidades intrapersonales maximizando su formación profesional.
+                 </p>
+                 <p class="p-2"><b>Sitio Git Hub: </b><a href="https://github.com/taceroc/semana-1-153.git" target="_blank" >https://github.com/taceroc/semana-1-153.git</a></p>       
             </div>
-            
-        </div>
-        <div class="footer_righ">
-            <div>
-                <h3>Contacto</h3>
-                    <p>
+            <div class="col-md-6 mt-md-0 mt-3">
+                <h5 class="text-center text-uppercase font-weight-bold">Contacto</h5>
+                    <p class="text-center ">
                         <span><b>Tatiana Acero Cuellar</b></span>
                         <br>
                         <span style="font-size: 14px;">Desarrollo sección Noticias</span>
                     </p>
-                    <p>
+                    <p class="text-center ">
                         <span><b>Daniel Picon Agudelo</b></span>
                         <br>
                         <span style="font-size: 14px;">Desarrollo sección servicios y sección del equipo</span>
-                    </p>                    <p>
+                    </p>                   
+                    <p class="text-center ">
                         <span><b>Cristian Camilo Parra Parra</b></span>
                         <br>
                         <span style="font-size: 14px;">Desarrollo cabecera y pie de página</span>
@@ -180,10 +243,13 @@
             </div>
         </div>
     </div>
-    </div>
-
-
 </footer>
+
+
+
+<!-- jQuery and JS bundle w/ Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
 </body>
 </html>
