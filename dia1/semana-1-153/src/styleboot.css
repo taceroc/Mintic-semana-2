@@ -42,7 +42,7 @@ nav{
 }
 
 .Noticias p {
-    height: 160px;
+    height: 140px;
 }
 
 .titulo__equipo{ 
@@ -59,6 +59,9 @@ nav{
     margin-bottom: 10px;
 }
 
+.carousel-item img{
+    opacity: 0.4;
+}
 
 
 /* .servicios__contenedor a:hover{
