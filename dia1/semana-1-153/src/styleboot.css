@@ -1,20 +1,20 @@
 body{
     /* estable el ancho de 1200 y el tamano se preserva aunque se cambie le tamano del navegador */
-    width: 1200px  !important;
-    min-width: 1200px  !important;
+    width: 1200px ;
+    min-width: 1200px ;
     /* padding-left: 50px; */
 }
 nav{
-    width: 1200px  !important;
+    width: 1200px ;
 }
 
 .navbar-light .nav-link{
-    color:rgba(255,0,0) !important;
+    color:rgba(255,0,0) ;
 }
 
 .navbar-light .nav-link:hover{
     background-color: rgba(255,0,0, 0.5);
-    color: rgb(219, 199, 13) !important;
+    color: rgb(219, 199, 13);
 }
 
 .titulo__services{ 
