@@ -1,29 +1,82 @@
 
+// fetch('https://gnews.io/api/v4/search?q=example&token=API-Token').then(function (response) {
+//     return response.json();
+// });
+// // .then(function (data) {
+// //     console.log(data);
+// // });
+
 
 const testApi = async () =>{
-    const resultText = await fetch(`https://newsapi.org/v2/top-headlines?country=co&X-Api-Key=d3110e11041c44ceaf7292bec160f5a8`, {method : 'GET'});
-    
-    
-    // let resultJson;
-    // if(resultText.ok){
-    //     resultJson = await resultText.json();
-    console.log(resultText.json());
-    //     console.log(resultJson.Poster);
-    //     printOnScreen(resultJson);
-    // }
-    // return resultJson;
+    const noticia = await fetch('https://gnews.io/api/v4/search?q=example&country=au&token=a8f4357881532af17f0324b5422963d7');
+
+    let resultJson;
+    if(noticia.ok){
+        resultJson = await noticia.json();
+        console.log(resultJson.articles);
+        console.log(resultJson.articles[0].title)
+        printOnScreen(resultJson);
+    }
+    return resultJson;
 }
 testApi();
 
-// var url = 'http://newsapi.org/v2/top-headlines?' +
-//           'country=us&' +
-//           'apiKey=d3110e11041c44ceaf7292bec160f5a8';
-// var req = new Request(url);
-// fetch(req,{mode: "no-cors"})
-//     .then(function(response) {
-//         console.log(response.json());
-//     });
+const printOnScreen = (dataText) => {
+    
+    const noticiaTitle = document.createElement('h2');
+    noticiaTitle.className = 'text-center card-title pt-4 pl-2';
+    noticiaTitle.textContent = dataText.articles[0].title;
 
+    const noticiaImagen = document.createElement('img');
+    noticiaImagen.className = "card-img-top rounded mx-auto d-block";
+    noticiaImagen.src = dataText.articles[0].image;
+    
+
+    const noticiaResumen = document.createElement('p');
+    noticiaResumen.className = 'text-justify p-2';
+    noticiaResumen.textContent = dataText.articles[0].description;
+
+    const noticiaUrl = document.createElement('a');
+    noticiaUrl.className = 'text-info text-decoration-none text-center p-2';
+    noticiaUrl.href = dataText.articles[0].url;
+    noticiaUrl.textContent="Noticia Completa"
+
+    //noticia0.appendChild(noticiaTitle);
+    noticia0.appendChild(noticiaTitle);
+    noticia0.appendChild(noticiaImagen);
+    noticia0.appendChild(noticiaResumen);
+    noticia0.appendChild(noticiaUrl);
+
+    //https://stackoverflow.com/questions/32855524/javascript-for-loop-append-element-in-several-places
+
+    for (let key = 1; key<4; key++){
+        const noticiaTitle = document.createElement('h2');
+        noticiaTitle.className = 'text-center card-title pt-4 pl-2';
+        noticiaTitle.textContent = dataText.articles[key].title;
+
+        const noticiaImagen = document.createElement('img');
+        noticiaImagen.className = "card-img-top";
+        noticiaImagen.src = dataText.articles[key].image;
+        
+
+        const noticiaResumen = document.createElement('p');
+        noticiaResumen.className = 'text-justify p-2';
+        noticiaResumen.textContent = dataText.articles[key].description;
+
+        const noticiaUrl = document.createElement('a');
+        noticiaUrl.className = 'text-info text-decoration-none text-center p-2';
+        noticiaUrl.href = dataText.articles[key].url;
+        noticiaUrl.textContent="Noticia Completa"
+
+        const a = "noticia"+"key";
+
+        a.appendChild(noticiaTitle);
+        a.appendChild(noticiaImagen);
+        a.appendChild(noticiaResumen);
+        a.appendChild(noticiaUrl);
+
+    }
+}
 
 // const app = new Vue({
 //     el: '#app',
