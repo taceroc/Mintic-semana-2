@@ -42,6 +42,8 @@ const testApi = async (movieSearchTitle) =>{
 
 const printOnScreen = (dataText) => {
 
+    movieContainer.innerHTML= "";
+
     // dataText.forEach(element => {
     //     console.log(dataText;
     // });
@@ -56,13 +58,14 @@ const printOnScreen = (dataText) => {
     
     // console.log(Title, Actors, Year, Poster);
     
-    // const moviePoster = document.createElement('img');
-    // moviePoster.className = "card-img-top";
-    // moviePoster.src = Poster;
-    // moviePoster.alt = 'poster ' + Title;
+    const moviePoster = document.createElement('img');
+    moviePoster.className = "card-img-top";
+    moviePoster.src = dataText.Poster;
+    moviePoster.alt = 'poster ' + dataText.Title;
     
-    // const movieTitle = document.createElement('h2');
-    // movieTitle.textContent = Title;
+    const movieTitle = document.createElement('h3');
+    movieTitle.className = 'text-center card-title pt-4 pl-2';
+    movieTitle.textContent = dataText.Title;
     
     // const movieActors = document.createElement('li');
     // movieActors.textContent = Actors;
@@ -71,15 +74,25 @@ const printOnScreen = (dataText) => {
     // movieYear.textContent = Year;
     
     
-    // movieContainer.appendChild(moviePoster);
-    // movieContainer.appendChild(movieTitle);
+    movieContainer.appendChild(moviePoster);
+    movieContainer.appendChild(movieTitle);
     // movieContainer.appendChild(movieActors);
     // movieContainer.appendChild(movieYear);
     
-    for (let key in dataText) {
-        let movieActors = document.createElement('h2');
-        
-        movieArray.push(key + ': ' + dataText[key]);
+    // for (let key in dataText) {
+    //     let movieActors = document.createElement('h2');
+
+    //     movieArray.push(key + ': ' + dataText[key]);
+    // }
+
+    for (let key in dataText){
+        if (key !== 'Title' && key !== 'Poster' && key !== 'Plot' && key !== 'Ratings' && key !== 'imdbVotes' &&  key !== 'imdbID' && key !== 'Type' && key !== 'DVD' && key !== 'BoxOffice' && key !== 'Website' && key !== 'Response' ){
+            // console.log(dataText['Title']);
+            let movieInfo = document.createElement('li');
+            movieInfo.className = 'list-group-item';
+            movieInfo.textContent = key +': '+dataText[key];
+            movieContainer.appendChild(movieInfo);
+        }
     }
     
     
