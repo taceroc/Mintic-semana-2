@@ -126,7 +126,7 @@ const printOnScreen = (dataText) => {
 
     for (let key = 0; key<4; key++){
         const noticiaTitle = document.createElement('h2');
-        noticiaTitle.className = 'card-title d-flex align-items-center text-center';
+        noticiaTitle.className = 'card-title d-flex align-items-center text-center w-100 mb-0';
         noticiaTitle.textContent = dataText.articles[key].title;
 
         const noticiaImagen = document.createElement('img');
@@ -135,13 +135,14 @@ const printOnScreen = (dataText) => {
         
 
         const noticiaResumen = document.createElement('p');
-        noticiaResumen.className = 'text-justify p-2';
+        noticiaResumen.className = 'text-justify p-2 mb-0';
         noticiaResumen.textContent = dataText.articles[key].description;
 
         const noticiaUrl = document.createElement('a');
         noticiaUrl.className = 'text-info text-decoration-none text-center p-2';
         noticiaUrl.href = dataText.articles[key].url;
-        noticiaUrl.textContent="Noticia Completa"
+        noticiaUrl.textContent="Noticia Completa";
+        noticiaUrl.target="_blank";
 
 
         menu[key].appendChild(noticiaTitle);
