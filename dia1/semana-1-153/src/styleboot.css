@@ -4,6 +4,7 @@ body{
     min-width: 1200px ;
     /* padding-left: 50px; */
 }
+
 nav{
     width: 1200px ;
 }
@@ -42,7 +43,7 @@ nav{
 }
 
 .Noticias p {
-    height: 140px;
+    height: 97px;
 }
 
 .titulo__equipo{ 
@@ -63,6 +64,23 @@ nav{
     opacity: 0.4;
 }
 
+.Noticias .card-img-top{
+    width: 550px;
+    height: 290px;
+}
+
+.Noticias .card-title{
+    width: 588px;
+    height: 152px;
+    vertical-align: center;
+}
+
+.Noticias .row{
+    width: 1200px ;
+    min-width: 1200px ;
+    margin-left: 0px;
+    margin-right: 0px;
+}
 
 /* .servicios__contenedor a:hover{
     font-size: 10px;
